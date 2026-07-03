@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'features/main/screens/main_screen.dart';
+import 'features/login/screens/login_screen.dart';
 
 void main() {
   runApp(const SportApp());
@@ -31,7 +31,7 @@ class SportApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: MainScreen(),
+      home: LoginScreen(),
     );
   }
 }
