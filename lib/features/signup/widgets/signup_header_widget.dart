@@ -11,11 +11,11 @@ class SignupHeader extends StatelessWidget {
           width: 80,
           height: 80,
           decoration: BoxDecoration(
-            color: Colors.blue,
+            color: Colors.brown,
             borderRadius: BorderRadius.circular(20),
             boxShadow: [
               BoxShadow(
-                color: Colors.blue.withOpacity(0.3),
+                color: Colors.brown.withOpacity(0.3),
                 blurRadius: 10,
                 offset: const Offset(0, 5),
               ),

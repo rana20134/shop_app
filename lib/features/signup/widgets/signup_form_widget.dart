@@ -21,7 +21,7 @@ class SignupForm extends StatelessWidget {
             ),
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(15),
-              borderSide: const BorderSide(color: Colors.blue, width: 2),
+              borderSide: const BorderSide(color: Colors.brown, width: 2),
             ),
           ),
         ),
@@ -41,7 +41,7 @@ class SignupForm extends StatelessWidget {
             ),
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(15),
-              borderSide: const BorderSide(color: Colors.blue, width: 2),
+              borderSide: const BorderSide(color: Colors.brown, width: 2),
             ),
           ),
         ),
@@ -62,7 +62,7 @@ class SignupForm extends StatelessWidget {
             ),
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(15),
-              borderSide: const BorderSide(color: Colors.blue, width: 2),
+              borderSide: const BorderSide(color: Colors.brown, width: 2),
             ),
           ),
         ),
@@ -78,7 +78,7 @@ class SignupForm extends StatelessWidget {
               Navigator.pop(context);
             },
             style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.blue,
+              backgroundColor: Colors.brown,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(15),
               ),
@@ -104,7 +104,7 @@ class SignupForm extends StatelessWidget {
           },
           child: const Text(
             "Already have an account? Login",
-            style: TextStyle(color: Colors.blue),
+            style: TextStyle(color: Colors.brown),
           ),
         ),
       ],

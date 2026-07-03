@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../home/screens/home_screen.dart';
+import '../../main/screens/main_screen.dart';
+import '../../signup/screens/signup_screen.dart';
 
 class LoginFormWidget extends StatelessWidget {
   const LoginFormWidget({super.key});
@@ -8,7 +9,6 @@ class LoginFormWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        /// Email
         TextField(
           decoration: InputDecoration(
             hintText: "student@flutter.dev",
@@ -28,7 +28,6 @@ class LoginFormWidget extends StatelessWidget {
 
         const SizedBox(height: 20),
 
-        /// Password
         TextField(
           obscureText: true,
           decoration: InputDecoration(
@@ -55,14 +54,13 @@ class LoginFormWidget extends StatelessWidget {
             onPressed: () {},
             child: const Text(
               "Forgot Password?",
-              style: TextStyle(color: Colors.blue),
+              style: TextStyle(color: Colors.brown),
             ),
           ),
         ),
 
         const SizedBox(height: 20),
 
-        /// Login Button
         SizedBox(
           width: double.infinity,
           height: 55,
@@ -71,40 +69,52 @@ class LoginFormWidget extends StatelessWidget {
               Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => const HomeScreen(),
+                  builder: (context) => const MainScreen(),
                 ),
               );
             },
             style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.blue,
+              backgroundColor: Colors.brown,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(15),
               ),
             ),
             child: const Text(
               "Login",
-              style: TextStyle(color: Colors.white, fontSize: 18),
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 18,
+              ),
             ),
           ),
         ),
 
         const SizedBox(height: 12),
 
-        /// Create Account Button
         SizedBox(
           width: double.infinity,
           height: 55,
           child: OutlinedButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const SignupScreen(),
+                ),
+              );
+            },
             style: OutlinedButton.styleFrom(
-              side: const BorderSide(color: Colors.blue),
+              side: const BorderSide(color: Colors.brown),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(15),
               ),
             ),
             child: const Text(
               "Create Account",
-              style: TextStyle(color: Colors.blue, fontSize: 18),
+              style: TextStyle(
+                color: Colors.brown,
+                fontSize: 18,
+              ),
             ),
           ),
         ),
